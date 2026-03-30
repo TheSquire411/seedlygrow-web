@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seedly Grow | Your AI Gardening Companion</title>
-    
+    <meta name="description" content="Seedly Grow — AI plant identifier, disease diagnosis & smart watering reminders. Your pocket botanist for thriving plants. Available on Android.">
+    <meta name="keywords" content="plant identifier, plant care, plant disease diagnosis, watering reminder, gardening app, AI plant scanner, houseplant care">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Seedly Grow — AI Plant Care Companion">
+    <meta property="og:description" content="Identify plants, diagnose diseases, and get smart watering reminders powered by AI. Your pocket botanist for thriving plants.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seedlygrow.com.au/">
+    <meta property="og:image" content="https://www.seedlygrow.com.au/assets/screen1.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seedly Grow — AI Plant Care Companion">
+    <meta name="twitter:description" content="Identify plants, diagnose diseases, and get smart watering reminders powered by AI.">
+    <meta name="twitter:image" content="https://www.seedlygrow.com.au/assets/screen1.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.seedlygrow.com.au/">
+
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="assets/logo.png">
 
@@ -17,8 +35,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- React & ReactDOM -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     
     <!-- Babel for JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -135,6 +153,9 @@
             background: #94a3b8;
         }
     </style>
+
+    <!-- Google Analytics - Replace G-XXXXXXXXXX with your tracking ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
 </head>
 <body>
     <div id="root"></div>
@@ -214,7 +235,7 @@
                                     Healthy <span className="text-[8px]">🌿</span>
                                 </div>
                                 <div className="w-full h-28 rounded-2xl bg-green-50 mb-3 overflow-hidden">
-                                    <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=300" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Pilea" />
+                                    <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=300" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Pilea" loading="lazy" />
                                 </div>
                                 <h3 className="font-bold text-gray-800 text-sm leading-tight mb-0.5">Chinese Money Plant</h3>
                                 <p className="text-[10px] text-gray-400 italic mb-3">Pilea peperomioides</p>
@@ -237,7 +258,7 @@
                                     Healthy <span className="text-[8px]">🌿</span>
                                 </div>
                                 <div className="w-full h-28 rounded-2xl bg-green-50 mb-3 overflow-hidden">
-                                    <img src="https://images.unsplash.com/photo-1637967886160-fd78dc39b809?auto=format&fit=crop&q=80&w=300" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Monstera" />
+                                    <img src="https://images.unsplash.com/photo-1637967886160-fd78dc39b809?auto=format&fit=crop&q=80&w=300" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Monstera" loading="lazy" />
                                 </div>
                                 <h3 className="font-bold text-gray-800 text-sm leading-tight mb-0.5">Monstera Deliciosa</h3>
                                 <p className="text-[10px] text-gray-400 italic mb-3">Monstera</p>
@@ -249,7 +270,7 @@
                                     Healthy <span className="text-[8px]">🌿</span>
                                 </div>
                                 <div className="w-full h-28 rounded-2xl bg-green-50 mb-3 overflow-hidden">
-                                    <img src="https://images.unsplash.com/photo-1563245228-4061807d9b73?auto=format&fit=crop&q=80&w=300" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Salvia" />
+                                    <img src="https://images.unsplash.com/photo-1563245228-4061807d9b73?auto=format&fit=crop&q=80&w=300" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Salvia" loading="lazy" />
                                 </div>
                                 <h3 className="font-bold text-gray-800 text-sm leading-tight mb-0.5">Hot Lips Salvia</h3>
                                 <p className="text-[10px] text-gray-400 italic mb-3">Salvia microphylla</p>
@@ -352,9 +373,9 @@
                         <div className="flex flex-col md:flex-row items-center gap-16">
                             
                             <div className="flex-1 text-center md:text-left space-y-8 animate-fade-in-up">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 shadow-sm text-amber-700 font-bold text-xs uppercase tracking-wider mb-2">
-                                    <Icon name="clock" size={14} />
-                                    In Review by Google
+                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lime-100 border border-lime-200 shadow-sm text-lime-700 font-bold text-xs uppercase tracking-wider mb-2">
+                                    <Icon name="check-circle" size={14} />
+                                    Now Available on Android
                                 </div>
                                 
                                 <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight">
@@ -363,7 +384,7 @@
                                 
                                 <p className="text-xl text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0">
                                     Identify plants instantly, diagnose diseases with "Dr. Plant", and get hyper-local care schedules. 
-                                    <br/><span className="font-bold text-gray-800">Coming soon to Android.</span>
+                                    <br/><span className="font-bold text-gray-800">Available now on Android.</span>
                                 </p>
                                 
                                 <div className="max-w-md mx-auto md:mx-0 bg-white p-2 rounded-2xl shadow-lg border border-gray-100">
@@ -388,21 +409,26 @@
                                                 className="bg-brand-dark text-white px-6 py-3 rounded-xl font-bold hover:bg-lime-600 transition-colors whitespace-nowrap flex items-center justify-center gap-2 disabled:opacity-70"
                                             >
                                                 {status === 'loading' ? 'Saving...' : 'Notify Me'}
-                                                {!status === 'loading' && <Icon name="bell" size={18} />}
+                                                {status !== 'loading' && <Icon name="bell" size={18} />}
                                             </button>
                                         </form>
                                     )}
                                 </div>
-                                <p className="text-xs text-gray-400 text-center md:text-left pl-2">We'll only email you when the app is live.</p>
+                                <p className="text-xs text-gray-400 text-center md:text-left pl-2">We'll only email you about Seedly Grow updates. By submitting, you agree to our <a href="/privacy" className="underline hover:text-gray-600">Privacy Policy</a>.</p>
 
-                                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4 opacity-60 grayscale hover:grayscale-0 transition-all duration-300 cursor-not-allowed">
-                                    <div className="flex items-center justify-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-2xl shadow-xl">
+                                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                                    <a 
+                                        href="https://play.google.com/store/apps/details?id=com.seedly.grow"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center justify-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-2xl shadow-xl hover:bg-gray-800 transition-all active:scale-95 cursor-pointer"
+                                    >
                                         <Icon name="play" size={24} className="fill-current" />
                                         <div className="text-left">
-                                            <div className="text-[10px] uppercase font-bold text-gray-400 leading-none mb-1">Coming Soon to</div>
+                                            <div className="text-[10px] uppercase font-bold text-gray-400 leading-none mb-1">Get it on</div>
                                             <div className="text-lg font-bold leading-none">Google Play</div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -515,7 +541,7 @@
                                     <div className={`relative border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl overflow-hidden transition-transform duration-300 group-hover:-translate-y-2`}>
                                         <div className="h-[32px] w-[3px] bg-gray-800 absolute -start-[13px] top-[72px] rounded-s-lg"></div>
                                         <div className={`w-full h-full ${screen.color} flex items-center justify-center overflow-hidden`}>
-                                            <img src={screen.img} alt={screen.title} className="w-full h-full object-cover object-top" />
+                                            <img src={screen.img} alt={screen.title} className="w-full h-full object-cover object-top" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="mt-8 text-center">
@@ -597,14 +623,14 @@
                             <span className="font-bold text-xl text-gray-900">Seedly Grow</span>
                         </div>
                         <div className="flex gap-8 text-gray-500 text-sm font-medium">
-                            <a href="#" className="hover:text-lime-600">Privacy Policy</a>
-                            <a href="#" className="hover:text-lime-600">Terms of Service</a>
-                            <a href="#" className="hover:text-lime-600">Support</a>
+                            <a href="/privacy" className="hover:text-lime-600">Privacy Policy</a>
+                            <a href="/terms" className="hover:text-lime-600">Terms of Service</a>
+                            <a href="mailto:support@seedlygrow.com.au" className="hover:text-lime-600">Support</a>
                         </div>
                     </div>
                     <div className="text-center text-gray-400 text-sm">
                         &copy; {new Date().getFullYear()} Seedly Grow. All rights reserved. <br/>
-                        <span className="text-xs mt-2 block">Coming Soon to Android.</span>
+                        <span className="text-xs mt-2 block">Available now on Android.</span>
                     </div>
                 </div>
             </footer>
